@@ -1,0 +1,15 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  marginLeft?: boolean;
+}
+
+const { title, href, marginLeft } = Astro.props;
+---
+
+<li
+  class={`${marginLeft ? "ml-auto" : ""} hidden md:flex xl:flex  items-center`}
+>
+  <a href={href}>{title}</a>
+</li>

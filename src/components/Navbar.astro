@@ -1,0 +1,19 @@
+---
+import NavBarItem from "./NavbarItem.astro";
+import { HamburgerMenu } from "./HamburgerMenu";
+---
+
+<nav class="py-[34px] px-4 bg-white box-border">
+  <ul class="flex gap-10">
+    <li>
+      <a href="/">
+        <img src="/img/logo-dark.png" height="27" width="202" alt="app-logo" />
+      </a>
+    </li>
+    <NavBarItem href="/" title="Teste" marginLeft />
+    <NavBarItem href="/" title="Teste" />
+    <NavBarItem href="/" title="Teste" />
+    <NavBarItem href="/" title="Teste" />
+    <HamburgerMenu client:load />
+  </ul>
+</nav>
