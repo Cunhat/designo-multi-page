@@ -1,0 +1,14 @@
+---
+import { cva } from "class-variance-authority";
+export interface Props {
+  text: string;
+}
+
+const HeadingStyles = cva("font-regular text-base", {
+  variants: {},
+});
+
+const { text } = Astro.props;
+---
+
+<h1 class={HeadingStyles({})}>{text}</h1>
